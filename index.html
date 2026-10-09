@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeMaster | Learn Coding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>💻 CodeMaster</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#quiz">Quiz</a>
+      <button id="themeBtn">🌙</button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <p class="tag">YOUR CODING JOURNEY STARTS HERE</p>
+    <h1>Learn to Code.<br><span>Build Your Future.</span></h1>
+    <p>Learn HTML, CSS and JavaScript with easy lessons and fun quizzes.</p>
+    <a class="main-btn" href="#courses">Start Learning →</a>
+  </header>
+
+  <section class="courses" id="courses">
+    <h2>Explore Our Courses</h2>
+    <p class="subtitle">Choose a course and start learning today.</p>
+
+    <div class="course-grid">
+      <div class="course-card html">
+        <div class="course-icon">🌐</div>
+        <h3>HTML Basics</h3>
+        <p>Learn how to build the structure of websites.</p>
+        <span>Beginner • 5 Lessons</span>
+        <button onclick="startLesson('HTML')">Start Course →</button>
+      </div>
+
+      <div class="course-card css">
+        <div class="course-icon">🎨</div>
+        <h3>CSS Design</h3>
+        <p>Make your websites beautiful and responsive.</p>
+        <span>Beginner • 5 Lessons</span>
+        <button onclick="startLesson('CSS')">Start Course →</button>
+      </div>
+
+      <div class="course-card js">
+        <div class="course-icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>Add buttons, interactions and logic to websites.</p>
+        <span>Intermediate • 5 Lessons</span>
+        <button onclick="startLesson('JavaScript')">Start Course →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson-section" id="lesson">
+    <h2 id="lessonTitle">Your First Lesson</h2>
+    <p id="lessonText">Select a course above to begin your learning journey.</p>
+    <pre><code id="lessonCode">console.log("Hello, World!");</code></pre>
+  </section>
+
+  <section class="quiz-section" id="quiz">
+    <h2>🧠 Test Your Knowledge</h2>
+    <p class="subtitle">Answer the question and earn points!</p>
+
+    <div class="quiz-card">
+      <p id="questionCount">Question 1</p>
+      <h3 id="question">Which HTML tag creates a heading?</h3>
+      <div id="answers" class="answers"></div>
+      <p id="feedback"></p>
+      <button id="nextBtn" class="main-btn" hidden>Next Question →</button>
+      <h3 id="result"></h3>
+      <button id="restartBtn" hidden>Try Again</button>
+    </div>
+  </section>
+
+  <footer>
+    <h3>💻 CodeMaster</h3>
+    <p>Learn today. Create tomorrow.</p>
+    <p>© 2026 CodeMaster</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
